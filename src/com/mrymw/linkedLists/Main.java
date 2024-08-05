@@ -7,5 +7,8 @@ public class Main {
         linkedList.insertHead(10);
         linkedList.insertWith(3, 1);
         System.out.println(linkedList);
+        System.out.println(linkedList.valueExists(6));
+        System.out.println(linkedList.valueExistsAtIndex(0));
+
     }
 }

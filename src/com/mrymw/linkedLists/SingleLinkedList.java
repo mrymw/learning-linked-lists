@@ -66,4 +66,21 @@ public class SingleLinkedList {
         }
         return joiner.toString();
     }
+    public boolean valueExists(int x) {
+        Node curNode = head;
+        while (curNode != null) {
+            if (curNode.value == x) {
+                return true;
+            }
+            curNode = curNode.next;
+        }
+        return false;
+    }
+    public int valueExistsAtIndex(int index) {
+        Node curNode = head;
+        for (int i = 0; i < index; i++) {
+            curNode= curNode.next;
+        }
+        return curNode.value;
+    }
 }
