@@ -9,6 +9,13 @@ public class Main {
         System.out.println(linkedList);
         System.out.println(linkedList.valueExists(6));
         System.out.println(linkedList.valueExistsAtIndex(0));
+        DoubleLinkedList list = new DoubleLinkedList();
+        list.insert(6, 2);
+        list.insert(4, 0);
+        list.insert(9, 1);
+        System.out.println(list);
+        list.traverse();
+        list.reverseTraverse();
 
     }
 }
